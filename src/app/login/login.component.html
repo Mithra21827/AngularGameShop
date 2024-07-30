@@ -1,0 +1,13 @@
+<div id="login-holder">
+    <div id="login">
+        <form  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" id="login-form" >
+
+            <input type="text" name="Username" ngModel #Username="ngModel" placeholder="username"/>
+            <input type="password" name="Password" ngModel #Password="ngModel" placeholder="password">
+            <button class="btn" type="submit">Login</button>
+        </form>
+        <div style="margin-top: 10px; font-size: 12px;">
+            <p>don't have account? <a style="font-size: medium;font-weight: 500;" routerLink="/Register">Signup</a></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div *ngIf="detaildData.gameId==0">
+    <img id="display_image" src="https://th.bing.com/th/id/OIP.iu1ZJTFuUstY-pqe89S0fgHaEK?rs=1&pid=ImgDetMain" alt="..."/>
+    <h5 id="display_name">Forza Horizon 5</h5>
+    <div>
+        <h6>About</h6>
+        <p style="width:280px;font-size: 13px;text-align: justify;">An open-world racing game set in a vibrant and diverse representation of Mexico. Known for its expansive map, dynamic weather, and a wide variety of cars, it blends racing with exploration and social play.",  </p>
+    </div>
+    <div>
+        <h6>Trailer</h6>
+        <!-- <iframe width="300" height="160" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe> -->
+        <iframe width="300" height="160" src="https://www.youtube.com/embed/oz-O74SmTSQ?autoplay=1&mute=1" title="Gran Turismo 7 - PlayStation Showcase 2021 Trailer | PS5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div *ngIf="detaildData.gameId!=0">
+    <img id="display_image" src={{detaildData.gameImgUrl}} alt="..."/>
+    <h5 id="display_name">{{detaildData.gameTitle}}</h5>
+    <div>
+        <h6>About</h6>
+        <p style="width:280px;font-size: 13px;">{{detaildData.gameAbout}}</p>
+    </div>
+    <div>
+        <h6>Trailer</h6>
+        <!-- <iframe width="300" height="160" src={{detaildData.gameTrilerUrl}}></iframe> -->
+        <!-- <iframe width="300" height="160" src="https://www.youtube.com/embed/oz-O74SmTSQ?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        <iframe *ngIf="detaildData.gameTrilerUrl" [src]="detaildData.gameTrilerUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

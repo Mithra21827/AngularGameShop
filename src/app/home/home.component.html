@@ -1,0 +1,28 @@
+<div id="home_holder">
+    <div id="home">
+        <div id="home_head">
+            <div *ngIf="logdingUser!=''">
+                <h4 id="use_name">Hi {{logdingUser}}</h4>
+                <p>Welcome Back</p>
+            </div>
+            <div id="head_container">
+                <form id="head_form" class="d-flex" role="search">
+                    <input class="form-control me-2"
+                    style="font-size: 1rem;"
+                    type="search" placeholder="Search" aria-label="Search">
+                    <button id="search_button" class="btn btn-outline-success" type="submit"><i class="bi bi-search" style="font-size: 15px; margin: 0px;"></i></button>
+                    <img id="user_image" src="https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=195&h=204&c=7&r=0&o=5&dpr=1.5&pid=1.7" height="35" width="35"/>
+                </form>
+            </div>
+        </div>
+        <h6 id="type_header">GameTypes</h6>
+        <div id="home_game_type">
+            <div class="card" (click)="setGameGener(game.gameGener)" *ngFor="let game of gameTypes" style="width: 10rem;">
+                <div class="card-body">{{game.gameGener}}</div>
+            </div>
+        </div>
+        <div id="home_games">
+            <app-games [type]="gameGener"></app-games>
+        </div>
+    </div>
+</div>

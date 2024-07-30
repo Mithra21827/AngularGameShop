@@ -1,0 +1,111 @@
+#home{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 750px;
+    margin-left:20px ;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#home_head{
+    width: 700px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin:5px 0 0 5px;
+}
+
+#home_head p{
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#head_container input{
+    height: 30px;
+} 
+
+#use_name{
+    font-size: large;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+}
+
+#search_button{
+    font-size: 5px;
+    font-weight: bolder;
+    border:1px solid rgba(90, 254, 96, 0.902);
+    margin: 0 10px 0 0;
+}
+
+#user_image{
+    border-radius: 50%;
+}
+
+#user_image,#search_button{
+    margin-top: -4px;
+}
+
+#type_header {
+    color:rgba(90, 254, 96, 0.902) ;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+#home_game_type{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0 10px 5px rgba(68, 39, 95, 0.667);
+    border: 1px solid rgba(68, 39, 95, 0.667);
+}
+
+.card:hover{
+    box-shadow: 0 0 15px 5px rgba(70, 147, 101, 0.667);
+    transition:0.5s;
+}
+
+#home_games{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+#home_holder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#game_detail_holder{
+    border: 1px solid white;
+    min-width: 320px;
+    height: 560px;
+    margin-left: 20px;
+    background-color: rgba(68, 39, 95);
+    border: 2px solid rgba(68, 39, 95);
+    border-radius: 20px;
+}
+
+#display-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

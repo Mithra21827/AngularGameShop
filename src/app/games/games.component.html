@@ -1,0 +1,141 @@
+<div>
+<h6 id="type_header">Games - {{type}}</h6>
+
+<div  [ngSwitch]="type" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    
+    <div *ngSwitchCase="'Racing'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'Action'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'Puzzle'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'Board'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'Sports'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'Simulation'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'City-Building'" class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngSwitchDefault class="carousel-inner">
+        <div *ngFor="let slide of getSlides(); let i = index" [class.active]="i === 0" class="carousel-item active" data-bs-interval="2000">
+            <div class="car-holder">
+                <div *ngFor="let game of slide"  >
+                    <div class="card" (click)="displayData(game)" style="width: 165px">
+                        <img src={{game.gameImgUrl}}  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" >{{game.gameTitle}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+
+
+<div id="game_detail_holder">
+    <app-display-detail id="display-detail" [detaildData]="gameDetialsData"></app-display-detail>
+</div>
+ 

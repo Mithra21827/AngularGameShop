@@ -1,0 +1,22 @@
+#display_image{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#displau_image p{
+    width:280px;
+    font-size: 14px;
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+#display_name{
+    font-size: large;
+}
+
+h5 {
+  text-align: center;  
+}
+

@@ -1,0 +1,74 @@
+#login-holder{
+    width:1100px;
+    height: 100%;
+    margin-left:30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 0px 15px 10px rgb(140, 62, 218);
+    animation: animateBg  5s linear infinite;
+    transition: 0.2s;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form input:nth-child(2){
+    margin: 20px;
+}
+
+input{
+    width: 80%;
+    padding: 10px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 2px solid rgb(194, 24, 24);
+    box-shadow: 0 0 5px 1px rgb(194, 24, 24);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background:transparent;
+    color:white;
+    transition: 0.25s;
+}
+
+input:focus {
+    outline: none;
+}
+
+button{
+    color: white;
+    border: 1px solid rgb(54, 221, 21);
+    width: 80%;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+button:hover{
+    border:none;
+    width: 80%;
+    background-color: rgba(83, 96, 39, 0.623);
+    box-shadow: 0 0 5px 3px rgba(83, 96, 39, 0.623);
+}
+
+
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+

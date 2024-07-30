@@ -1,0 +1,72 @@
+img{
+    border-radius: 5px ;
+    object-fit:cover;
+    height: 200px;
+}
+
+.card-body{
+    height: 0;
+    visibility: hidden;
+}
+
+.carousel-inner{
+    width: 710px;
+}
+
+#type_header {
+    color:rgba(90, 254, 96, 0.902) ;
+    font-size: 20px;
+}
+
+.car-holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.card-body{
+    padding:2px;
+    text-align: center;
+    color: black;
+}
+
+.card{
+    margin: 5px;
+    height: 190px;
+    padding: 0;
+    background-color: rgba(68, 39, 95, 0.667);
+    border-radius: 5px;
+}
+
+.card:hover{
+    height: 225px;
+    background-color: rgb(68, 39, 95);
+    transition: 0.5s;
+}
+
+.card:hover > .card-body{
+    color: rgb(218, 227, 227);
+}
+
+.card:hover > .card-body{
+    visibility: visible;
+}
+.card:hover > img{
+    height: 180px;
+}
+
+#game_detail_holder{
+    position: relative;
+    margin-top: -520px;
+    margin-left: 750px;
+    height: 550px;
+    width: 320px;
+    background-color: rgba(68, 39, 95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
