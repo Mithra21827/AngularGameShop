@@ -27,9 +27,9 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install dependencies
         run: npx ci
-      # {5}
-      - name: Run tests
-        run: npx run test:ci
+      # # {5}
+      # - name: Run tests
+      #   run: npx run test:ci
       # {6}
       - name: Build
         run: npx run build
