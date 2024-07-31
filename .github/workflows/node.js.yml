@@ -33,4 +33,10 @@ jobs:
       # {6}
       - name: Build
         run: npm run build
+      - name: Deploy to gh pages
+        run: |
+          npx angular-cli-ghpages --dir=dist/game-shop-new
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.Token }}
        
