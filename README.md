@@ -32,14 +32,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## GitHUb pages
-# step 1: 
+# step 1: Add packages for github pages
     ng add angular-cli-ghpages
-# step 2: 
+# step 2: Push code to repo
     push code to git hub
-# step 3: 
-    go to repo setting and select branch and save
+# step 3: Select the repo directory from where the build need to read
+    Setting -> Pages -> branch(main) -> save
 # step 4: build application using following cmd
     ng build --base-href "https://<profile-name>.github.io/<reponame>"
-# step 5: npx angular-cli-ghpages --dir=dist/<reponame>
-# step 6: 
+# step 5: use below command to host application to github page
+    npx angular-cli-ghpages --dir=dist/<reponame>
+# step 6: set deierctory to gh-pages 
+    Setting -> Pages -> branch(gh-page) -> save
+# step 7: 
     enter url in brwoser:https://<profile-name>.github.io/<reponame>;
