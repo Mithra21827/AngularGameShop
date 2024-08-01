@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 >>>>>>> 060937fbf8295fdf1544f99c6351e2fc848256e1
 
 
-## GitHUb pages
+## GitHub Live pages
 # step 1: Add packages for github pages
     ng add angular-cli-ghpages
 # step 2: Push code to repo
