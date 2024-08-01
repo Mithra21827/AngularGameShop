@@ -29,3 +29,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # AngularGameShop
 >>>>>>> 060937fbf8295fdf1544f99c6351e2fc848256e1
+
+
+## GitHUb pages
+# step 1: 
+    ng add angular-cli-ghpages
+# step 2: 
+    push code to git hub
+# step 3: 
+    go to repo setting and select branch and save
+# step 4: build application using following cmd
+    ng build --base-href "https://<profile-name>.github.io/<reponame>"
+# step 5: npx angular-cli-ghpages --dir=dist/<reponame>
+# step 6: 
+    enter url in brwoser:https://<profile-name>.github.io/<reponame>;
